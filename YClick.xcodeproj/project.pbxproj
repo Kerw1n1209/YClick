@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		010000000000000000000001 /* YClickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000001 /* YClickApp.swift */; };
+		010000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000002 /* ContentView.swift */; };
+		010000000000000000000003 /* FileTypeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000003 /* FileTypeDetailView.swift */; };
+		010000000000000000000004 /* FileTypeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000004 /* FileTypeEditorView.swift */; };
+		010000000000000000000005 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000005 /* SettingsView.swift */; };
+		010000000000000000000006 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000006 /* AppConstants.swift */; };
+		010000000000000000000007 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000007 /* FileType.swift */; };
+		010000000000000000000008 /* FileTypeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000008 /* FileTypeStore.swift */; };
+		010000000000000000000009 /* FileCreationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000009 /* FileCreationService.swift */; };
+		010000000000000000000010 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000010 /* FinderSync.swift */; };
+		010000000000000000000011 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000006 /* AppConstants.swift */; };
+		010000000000000000000012 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000007 /* FileType.swift */; };
+		010000000000000000000013 /* FileTypeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000008 /* FileTypeStore.swift */; };
+		010000000000000000000014 /* FileCreationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000009 /* FileCreationService.swift */; };
+		010000000000000000000015 /* YClickFinderExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 020000000000000000000012 /* YClickFinderExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		010000000000000000000016 /* FileCreationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000013 /* FileCreationServiceTests.swift */; };
+		010000000000000000000017 /* FileTypeStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000014 /* FileTypeStoreTests.swift */; };
+		010000000000000000000018 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000006 /* AppConstants.swift */; };
+		010000000000000000000019 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000007 /* FileType.swift */; };
+		010000000000000000000020 /* FileTypeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000008 /* FileTypeStore.swift */; };
+		010000000000000000000021 /* FileCreationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000009 /* FileCreationService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		030000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 090000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 080000000000000000000002;
+			remoteInfo = YClickFinderExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		040000000000000000000001 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				010000000000000000000015 /* YClickFinderExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		020000000000000000000001 /* YClickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YClickApp.swift; sourceTree = "<group>"; };
+		020000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		020000000000000000000003 /* FileTypeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTypeDetailView.swift; sourceTree = "<group>"; };
+		020000000000000000000004 /* FileTypeEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTypeEditorView.swift; sourceTree = "<group>"; };
+		020000000000000000000005 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		020000000000000000000006 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		020000000000000000000007 /* FileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileType.swift; sourceTree = "<group>"; };
+		020000000000000000000008 /* FileTypeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTypeStore.swift; sourceTree = "<group>"; };
+		020000000000000000000009 /* FileCreationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCreationService.swift; sourceTree = "<group>"; };
+		020000000000000000000010 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		020000000000000000000011 /* YClick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YClick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		020000000000000000000012 /* YClickFinderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YClickFinderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		020000000000000000000013 /* FileCreationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCreationServiceTests.swift; sourceTree = "<group>"; };
+		020000000000000000000014 /* FileTypeStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTypeStoreTests.swift; sourceTree = "<group>"; };
+		020000000000000000000015 /* YClickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YClickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		050000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		050000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		050000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		060000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				060000000000000000000002 /* YClick */,
+				060000000000000000000006 /* YClickFinderExtension */,
+				060000000000000000000008 /* Tests/YClickTests */,
+				060000000000000000000009 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		060000000000000000000002 /* YClick */ = {
+			isa = PBXGroup;
+			children = (
+				060000000000000000000003 /* App */,
+				060000000000000000000004 /* Views */,
+				060000000000000000000005 /* Shared */,
+			);
+			path = YClick;
+			sourceTree = "<group>";
+		};
+		060000000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				020000000000000000000001 /* YClickApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		060000000000000000000004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				020000000000000000000002 /* ContentView.swift */,
+				020000000000000000000003 /* FileTypeDetailView.swift */,
+				020000000000000000000004 /* FileTypeEditorView.swift */,
+				020000000000000000000005 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		060000000000000000000005 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				020000000000000000000006 /* AppConstants.swift */,
+				020000000000000000000007 /* FileType.swift */,
+				020000000000000000000008 /* FileTypeStore.swift */,
+				020000000000000000000009 /* FileCreationService.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		060000000000000000000006 /* YClickFinderExtension */ = {
+			isa = PBXGroup;
+			children = (
+				020000000000000000000010 /* FinderSync.swift */,
+			);
+			path = YClickFinderExtension;
+			sourceTree = "<group>";
+		};
+		060000000000000000000008 /* Tests/YClickTests */ = {
+			isa = PBXGroup;
+			children = (
+				020000000000000000000013 /* FileCreationServiceTests.swift */,
+				020000000000000000000014 /* FileTypeStoreTests.swift */,
+			);
+			path = Tests/YClickTests;
+			sourceTree = "<group>";
+		};
+		060000000000000000000009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				020000000000000000000011 /* YClick.app */,
+				020000000000000000000012 /* YClickFinderExtension.appex */,
+				020000000000000000000015 /* YClickTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		080000000000000000000001 /* YClick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000002 /* Build configuration list for PBXNativeTarget "YClick" */;
+			buildPhases = (
+				110000000000000000000001 /* Sources */,
+				050000000000000000000001 /* Frameworks */,
+				040000000000000000000001 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				120000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = YClick;
+			productName = YClick;
+			productReference = 020000000000000000000011 /* YClick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		080000000000000000000002 /* YClickFinderExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000003 /* Build configuration list for PBXNativeTarget "YClickFinderExtension" */;
+			buildPhases = (
+				110000000000000000000002 /* Sources */,
+				050000000000000000000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YClickFinderExtension;
+			productName = YClickFinderExtension;
+			productReference = 020000000000000000000012 /* YClickFinderExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		080000000000000000000003 /* YClickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000004 /* Build configuration list for PBXNativeTarget "YClickTests" */;
+			buildPhases = (
+				110000000000000000000003 /* Sources */,
+				050000000000000000000003 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YClickTests;
+			productName = YClickTests;
+			productReference = 020000000000000000000015 /* YClickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		090000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					080000000000000000000001 = {
+						CreatedOnToolsVersion = 26.4;
+					};
+					080000000000000000000002 = {
+						CreatedOnToolsVersion = 26.4;
+					};
+					080000000000000000000003 = {
+						CreatedOnToolsVersion = 26.4;
+					};
+				};
+			};
+			buildConfigurationList = 100000000000000000000001 /* Build configuration list for PBXProject "YClick" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 060000000000000000000001;
+			productRefGroup = 060000000000000000000009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				080000000000000000000001 /* YClick */,
+				080000000000000000000002 /* YClickFinderExtension */,
+				080000000000000000000003 /* YClickTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		110000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010000000000000000000001 /* YClickApp.swift in Sources */,
+				010000000000000000000002 /* ContentView.swift in Sources */,
+				010000000000000000000003 /* FileTypeDetailView.swift in Sources */,
+				010000000000000000000004 /* FileTypeEditorView.swift in Sources */,
+				010000000000000000000005 /* SettingsView.swift in Sources */,
+				010000000000000000000006 /* AppConstants.swift in Sources */,
+				010000000000000000000007 /* FileType.swift in Sources */,
+				010000000000000000000008 /* FileTypeStore.swift in Sources */,
+				010000000000000000000009 /* FileCreationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010000000000000000000010 /* FinderSync.swift in Sources */,
+				010000000000000000000011 /* AppConstants.swift in Sources */,
+				010000000000000000000012 /* FileType.swift in Sources */,
+				010000000000000000000013 /* FileTypeStore.swift in Sources */,
+				010000000000000000000014 /* FileCreationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010000000000000000000016 /* FileCreationServiceTests.swift in Sources */,
+				010000000000000000000017 /* FileTypeStoreTests.swift in Sources */,
+				010000000000000000000018 /* AppConstants.swift in Sources */,
+				010000000000000000000019 /* FileType.swift in Sources */,
+				010000000000000000000020 /* FileTypeStore.swift in Sources */,
+				010000000000000000000021 /* FileCreationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		120000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 080000000000000000000002 /* YClickFinderExtension */;
+			targetProxy = 030000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		130000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		130000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		130000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YClick/YClick.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NPK9PTXMVN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = YClick/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yclick.YClick;
+				PRODUCT_NAME = YClick;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		130000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YClick/YClick.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NPK9PTXMVN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = YClick/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yclick.YClick;
+				PRODUCT_NAME = YClick;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		130000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = YClickFinderExtension/YClickFinderExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NPK9PTXMVN;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = YClickFinderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yclick.YClick.FinderExtension;
+				PRODUCT_NAME = YClickFinderExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		130000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = YClickFinderExtension/YClickFinderExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NPK9PTXMVN;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = YClickFinderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yclick.YClick.FinderExtension;
+				PRODUCT_NAME = YClickFinderExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		130000000000000000000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yclick.YClickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		130000000000000000000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yclick.YClickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100000000000000000000001 /* Build configuration list for PBXProject "YClick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				130000000000000000000001 /* Debug */,
+				130000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000002 /* Build configuration list for PBXNativeTarget "YClick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				130000000000000000000003 /* Debug */,
+				130000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000003 /* Build configuration list for PBXNativeTarget "YClickFinderExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				130000000000000000000005 /* Debug */,
+				130000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000004 /* Build configuration list for PBXNativeTarget "YClickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				130000000000000000000007 /* Debug */,
+				130000000000000000000008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 090000000000000000000001 /* Project object */;
+}
